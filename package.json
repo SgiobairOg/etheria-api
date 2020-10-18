@@ -1,0 +1,23 @@
+{
+  "name": "etheria-api",
+  "version": "0.1.0",
+  "description": "An API to relationships and affiliations in \"She-Ra and the Princesses of Power\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SgiobairOg/etheria-api.git"
+  },
+  "keywords": [
+    "api",
+    "she-ra"
+  ],
+  "author": "Jason Wilson",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/SgiobairOg/etheria-api/issues"
+  },
+  "homepage": "https://github.com/SgiobairOg/etheria-api#readme"
+}
