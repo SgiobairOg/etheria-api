@@ -4,7 +4,10 @@
   "description": "An API to relationships and affiliations in \"She-Ra and the Princesses of Power\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:start": "docker run --name etheria-api-pg --env-file=./.env -d -p 5432:5432 -v ~/data/etheria-api-pg:/var/lib/postgresql/data postgres",
+    "db:psql": "docker exec -it etheria-api-pg psql -d etheria_db -U friend_of_mara",
+    "db:stop": "docker container stop etheria-api-pg && docker container rm etheria-api-pg"
   },
   "repository": {
     "type": "git",
