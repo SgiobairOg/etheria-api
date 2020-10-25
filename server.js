@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 3000
 
 fastify.register(require('./src/routes/v0/root'), {prefix: 'api/v0/'})
 fastify.register(require('./src/routes/v0/relationships'), {prefix: 'api/v0/'})
+fastify.register(require('./src/routes/v0/individuals'), {prefix: 'api/v0/'})
 
 const start = async () => {
     try {
