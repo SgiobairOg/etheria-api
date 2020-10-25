@@ -4,7 +4,11 @@
   "description": "An API to relationships and affiliations in \"She-Ra and the Princesses of Power\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -r dotenv/config -w src/ server.js",
+    "db:start": "docker run --name etheria-api-pg --env-file=./.env -d -p 5432:5432 -v ~/data/etheria-api-pg:/var/lib/postgresql/data postgres",
+    "db:psql": "docker exec -it etheria-api-pg psql -d etheria_db -U friend_of_mara",
+    "db:stop": "docker container stop etheria-api-pg && docker container rm etheria-api-pg"
   },
   "repository": {
     "type": "git",
@@ -19,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/SgiobairOg/etheria-api/issues"
   },
-  "homepage": "https://github.com/SgiobairOg/etheria-api#readme"
+  "homepage": "https://github.com/SgiobairOg/etheria-api#readme",
+  "dependencies": {
+    "fastify": "^3.7.0",
+    "pg": "^8.4.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6"
+  }
 }
