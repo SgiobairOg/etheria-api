@@ -2,6 +2,8 @@
 
 An API to relationships and affiliations in "She-Ra and the Princesses of Power"
 
+> Careful, the API docs may contain spoilers, the API data DEFINITELY contains spoilers. If you haven't watched all seasons of She-Ra yet… why are you here? Go watch She-Ra.
+
 ## Endpoints
 
 ### Individuals
@@ -95,25 +97,9 @@ Retrieve information about all relationships in the database. Sample response:
                 "id": 1,
                 "individual": 1,
                 "relates_to": 2,
-                "type": "partner",
-                "lore": null,
-                "former": false
-            },
-            {
-                "id": 2,
-                "individual": 1,
-                "relates_to": 2,
                 "type": "enemy",
-                "lore": "Adora and Catra became enemies when Adora left The Horde in Season 1. They Reconciled in the final season.",
+                "lore": "Adora and Catra became enemies when ...",
                 "former": true
-            },
-            {
-                "id": 3,
-                "individual": 1,
-                "relates_to": 2,
-                "type": "ally",
-                "lore": null,
-                "former": false
             },
             ...
         ]
@@ -140,25 +126,9 @@ Retrieve information about a relationships of a specific individual in the datab
                 "id": 1,
                 "individual": 1,
                 "relates_to": 2,
-                "type": "partner",
-                "lore": null,
-                "former": false
-            },
-            {
-                "id": 2,
-                "individual": 1,
-                "relates_to": 2,
                 "type": "enemy",
-                "lore": "Adora and Catra became enemies when Adora left The Horde in Season 1. They Reconciled in the final season.",
+                "lore": "Adora and Catra became enemies when ...",
                 "former": true
-            },
-            {
-                "id": 3,
-                "individual": 1,
-                "relates_to": 2,
-                "type": "ally",
-                "lore": null,
-                "former": false
             },
             ...
         ]
